@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="web_resume.html">
+        <h1>Signup Form</h1>
+        Firstname:<input type="text" minlength="7" maxlength="10" value="" required> Lastname:<input type="text" minlength="4" maxlength="10" disabled>
+        <!-- required is used for mandatory -->
+        <!-- value : it gives default value if we want to change then we should overwrite it -->
+        <!-- disabled is used to disable the block -->
+        <br>
+        <br>
+        <label for="s"> Age :</label>
+        <input id ="s" type="number" required>
+        <br>
+        <br>
+        <!-- label is used to highlight the text area even if we press heading & for id is required to highlight the text area if we click heading-->
+        Date of Birth:<input type="date" required>
+        <br>
+        <br>
+        Email : <input type ="email" required>
+        <br>
+        <br>
+        <label for="">Password :</label>
+        <input type="password" required>
+        <br>
+        <br>
+        <label for="">Gender:</label>
+        <br>
+        <input type="radio" name="gender" id="1" required> 
+        <label for="1">Male</label>
+        <br>
+        <input type="radio" name="gender" id="2" checked required>
+        <label for="2">Female</label>
+        <!-- if you want to select only one then we should use name attribute. it is specially used in checkbox -->
+         <br>
+         <br>
+        <label for="">Languages Known :</label>
+        <br>
+        <input type="checkbox" id="python" ><label for="python">python</label>
+        <br>
+        <input type="checkbox">Java
+        <br>
+        <input type="checkbox">SQL
+        <br>
+        <input type="checkbox">MongoDB
+        <br>
+        <input type="checkbox">HTML
+        <br>
+        <input type="checkbox">CSS
+        <br>
+        <br>
+        <label for="">Resume upload</label>
+        <br>
+        <input type="file" accept="image" required>
+        <br>
+        <br>
+
+        <p><h3>select your payment methods:</h3></p>
+        <select name="payment oprtions" id="google pay">
+            <option value="select">select</option>
+            <option value="phone pay">phone pay</option>
+            <option value="google pay">google pay</option>
+            <option value="cod">cod</option>
+        </select>
+        <br><br>
+        <label for="">feedback</label>
+        <textarea name="" id="" rows="10" cols="100" placeholder="enter your feedback....."></textarea>
+        <br><br>
+        <input type ="submit">
+        <input type="Reset">
+        <br><br>
+     >
+    </form>
+</body>
+</html>
